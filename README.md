@@ -1,20 +1,33 @@
 # vue-laravel-spa
 
 SPA アプリケーションの構築
+実務で使用した環境の簡易的な再現
 
 ## 構成
 
-### client
+### フロントエンド
 
-- vue3.2
+- vue 3.2
 - vue-router
-- element-plus
+- element-plus（UI フレームワーク）
 
-### php
+#### client コンテナ 実行
 
-- php8
+```
+yarn
+yarn dev
+```
+
+### バックエンド
+
+- nginx
+- php 8
 - laravel
+- mysql 8
 
-### db
+#### php コンテナ 初期化
 
-- mysql8
+```
+chown -R www-data:www-data storage/
+php artisan migrate
+```
