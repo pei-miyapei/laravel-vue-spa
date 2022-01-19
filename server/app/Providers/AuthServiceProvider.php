@@ -29,7 +29,7 @@ class AuthServiceProvider extends ServiceProvider
         if (!$this->app->routesAreCached()) {
             Passport::routes(function (RouteRegistrar $router): void {
                 $router->forAuthorization();
-                $router->forTransientTokens();
+                $router->forAccessTokens();
             });
         }
 
