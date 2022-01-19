@@ -5,27 +5,27 @@ SPA アプリケーションの構築
 
 ## 構成
 
-### フロントエンド
+### SPA クライアントコンテナ（SPA フロントエンド）
 
 - vue 3.2
 - vue-router
 - element-plus（UI フレームワーク）
 
-#### client コンテナ 実行
+#### コンテナ実行
 
 ```
 yarn
 yarn dev
 ```
 
-### バックエンド
+### API server コンテナ（SPA バックエンド、ユーザー管理）
 
 - nginx
 - php 8
-- laravel
+- laravel (passport, breeze)
 - mysql 8
 
-#### php コンテナ 初期化
+#### コンテナ初期化
 
 ```
 chown -R www-data:www-data storage/
