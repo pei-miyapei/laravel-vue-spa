@@ -29,5 +29,15 @@ yarn dev
 
 ```
 chown -R www-data:www-data storage/
-php artisan migrate
+php artisan migrate:refresh --seed
 ```
+
+### その他
+
+#### 認証
+
+- Authorization Code Grant Flow with Proof Key for Code Exchange（PKCE 4）
+
+##### Demo ユーザー
+
+demo@example.com / demo@demo
