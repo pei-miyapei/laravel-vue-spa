@@ -1,4 +1,4 @@
-# vue-laravel-spa
+# laravel-vue-spa
 
 SPA アプリケーションの構築  
 実務で使用した環境の簡易的な再現
