@@ -9,6 +9,7 @@ import AuthGuardVue from '../components/auth/AuthGuard.vue';
         <el-menu router>
           <el-menu-item index="/">Home</el-menu-item>
           <el-menu-item index="/about">About</el-menu-item>
+          <el-menu-item index="/demos/demo">Demo</el-menu-item>
         </el-menu>
       </el-aside>
       <el-container>

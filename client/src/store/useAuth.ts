@@ -19,9 +19,9 @@ export const useAuth = () => {
   });
 };
 
-type AuthStateType = ReturnType<typeof useAuth>;
-export const AuthStateSymbol: InjectionKey<AuthStateType> = Symbol('AuthState');
-export const injectAuth = (): AuthStateType => {
+export type useAuth = ReturnType<typeof useAuth>;
+export const AuthStateSymbol: InjectionKey<useAuth> = Symbol('AuthState');
+export const injectAuth = (): useAuth => {
   const auth = inject(AuthStateSymbol);
   if (auth === undefined) {
     throw new Error('auth は provide されていません。');
