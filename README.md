@@ -1,6 +1,6 @@
 # vue-laravel-spa
 
-SPA アプリケーションの構築
+SPA アプリケーションの構築  
 実務で使用した環境の簡易的な再現
 
 ## 構成
@@ -10,6 +10,12 @@ SPA アプリケーションの構築
 - vue 3.2
 - vue-router
 - element-plus（UI フレームワーク）
+
+#### いつか対応するかも
+
+- vuelidate  
+  element-plus 標準ではバリデーションに async-validator が使用されていますが  
+  vuelidate を導入して利用すると、rules ごとのエラーメッセージなどにも対応できます
 
 #### コンテナ実行
 
