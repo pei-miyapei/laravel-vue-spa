@@ -31,6 +31,7 @@ DB_PASSWORD=root
 
 ```bash
 php artisan migrate:refresh --seed
+php artisan passport:keys
 ```
 
 ### SPA クライアントコンテナ（SPA フロントエンド）
