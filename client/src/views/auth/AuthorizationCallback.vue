@@ -17,3 +17,5 @@ pkce.exchangeForAccessToken(document.location.href).then((response) => {
   router.replace({ name: 'Home' });
 });
 </script>
+
+<template></template>
