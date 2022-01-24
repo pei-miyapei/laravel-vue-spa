@@ -33,8 +33,22 @@ yarn dev
 
 #### コンテナ初期化
 
-```
+```bash
+composer install
 chown -R www-data:www-data storage/
+cp .env.example .env
+php artisan key:generate
+```
+
+.env 編集（DB コンテナ接続設定）
+
+```
+DB_HOST=db
+DB_DATABASE=dev_db
+DB_PASSWORD=root
+```
+
+```bash
 php artisan migrate:refresh --seed
 ```
 
