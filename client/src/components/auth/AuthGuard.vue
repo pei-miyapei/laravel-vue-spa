@@ -15,8 +15,6 @@ if (!auth.hasToken()) {
 }
 </script>
 
-<template>
-  <template v-if="auth.hasToken()">
-    <slot />
-  </template>
+<template v-if="auth.hasToken()">
+  <slot />
 </template>
