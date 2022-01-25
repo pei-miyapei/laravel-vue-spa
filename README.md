@@ -36,8 +36,9 @@ php artisan passport:keys
 
 ### SPA クライアントコンテナ（SPA フロントエンド）
 
-- TypeScript
+- Vite
 - Vue 3.2
+- TypeScript
 - vue-router
 - js-pkce
 - element-plus（UI フレームワーク）
