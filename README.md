@@ -36,8 +36,8 @@ php artisan passport:keys
 
 ### SPA クライアントコンテナ（SPA フロントエンド）
 
-- typescript
-- vue 3.2
+- TypeScript
+- Vue 3.2
 - vue-router
 - element-plus（UI フレームワーク）
 
@@ -60,10 +60,12 @@ yarn dev
 
 - Authorization Code Grant Flow with Proof Key for Code Exchange（PKCE 4）
 
+クライアント側は js-pkce 、IdP 側は Laravel Passport を利用
+
 ##### Demo ユーザー
 
 demo@example.com / demo@demo
 
 ### キャプチャ
-![laravel-vue-spa](https://user-images.githubusercontent.com/71608387/151015973-efa55ac8-72d8-481c-ad88-2e1aa5e9f32f.gif)
 
+![laravel-vue-spa](https://user-images.githubusercontent.com/71608387/151015973-efa55ac8-72d8-481c-ad88-2e1aa5e9f32f.gif)
