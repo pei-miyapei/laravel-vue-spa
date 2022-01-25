@@ -62,3 +62,7 @@ yarn dev
 ##### Demo ユーザー
 
 demo@example.com / demo@demo
+
+### キャプチャ
+![laravel-vue-spa](https://user-images.githubusercontent.com/71608387/151015973-efa55ac8-72d8-481c-ad88-2e1aa5e9f32f.gif)
+
