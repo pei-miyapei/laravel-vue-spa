@@ -60,7 +60,10 @@ yarn dev
 
 - Authorization Code Grant Flow with Proof Key for Code Exchange（PKCE 4）
 
-クライアント側は js-pkce 、IdP 側は Laravel Passport を利用
+クライアント側に [js-pkce](https://www.npmjs.com/package/js-pkce) 、IdP 側に [Laravel Passport](https://readouble.com/laravel/8.x/ja/passport.html) を利用する形です。
+
+このデモではトークンを永続化していません。  
+リロードしたら消えますが、Laravel 側のセッションが生きていれば認証は飛ばせます。
 
 ##### Demo ユーザー
 
