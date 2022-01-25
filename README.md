@@ -39,6 +39,7 @@ php artisan passport:keys
 - TypeScript
 - Vue 3.2
 - vue-router
+- js-pkce
 - element-plus（UI フレームワーク）
 
 #### いつか対応するかも
