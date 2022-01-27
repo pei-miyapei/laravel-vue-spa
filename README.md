@@ -3,6 +3,9 @@
 SPA アプリケーションの構築  
 実務で使用した環境の簡易的な再現
 
+Qiitaにも解説を投稿しています  
+https://qiita.com/miyapei/items/ed1efcf19c2062490bc4
+
 ## 構成
 
 ### API server コンテナ（SPA バックエンド、ユーザー管理）
