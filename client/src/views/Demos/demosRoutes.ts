@@ -1,4 +1,4 @@
-import DemoEditVue from './demo/DemoEdit.vue';
+import DemoEditVue from './Demo/DemoEdit.vue';
 
 export const demosRoutes = [
   {

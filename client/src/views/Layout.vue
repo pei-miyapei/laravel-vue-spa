@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import AuthGuardVue from '../components/auth/AuthGuard.vue';
+import AuthGuardVue from '../components/Auth/AuthGuard.vue';
 </script>
 
 <template>

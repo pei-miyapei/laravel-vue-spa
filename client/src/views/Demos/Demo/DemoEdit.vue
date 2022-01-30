@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { demoEditProps } from '../../../feature/demos/demo/demoEditProps';
+import { demoEditProps } from '../../../feature/Demos/Demo/demoEditProps';
 
 const { demoForm, demo, save, isLoading } = demoEditProps();
 </script>

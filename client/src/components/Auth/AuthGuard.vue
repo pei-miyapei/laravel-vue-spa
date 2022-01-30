@@ -2,9 +2,9 @@
 import PKCE from 'js-pkce';
 import { injectAuth } from '../../store/authContext';
 
-const auth = injectAuth();
+const { hasToken } = injectAuth();
 
-if (!auth.hasToken()) {
+if (!hasToken()) {
   const pkce = new PKCE({
     client_id: '1',
     redirect_uri: location.origin + '/auth/callback',
@@ -15,6 +15,6 @@ if (!auth.hasToken()) {
 }
 </script>
 
-<template v-if="auth.hasToken()">
+<template v-if="hasToken()">
   <slot />
 </template>
