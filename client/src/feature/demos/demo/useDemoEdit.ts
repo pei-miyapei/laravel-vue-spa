@@ -1,6 +1,6 @@
 import { ElForm, ElMessage } from 'element-plus';
 import { onBeforeMount, reactive, ref } from 'vue';
-import { injectAuth } from '../../../store/useAuth';
+import { injectAuth } from '../../../store/authContext';
 import { Demo } from './demo';
 import { DemoRepository } from './demoRepository';
 import { useLoading } from './useLoading';

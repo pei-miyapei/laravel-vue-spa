@@ -1,27 +1,28 @@
 import { inject, InjectionKey, readonly, ref } from 'vue';
 
-export const useAuth = () => {
+export const authProps = () => {
   const accessToken = ref('');
   const refreshToken = ref('');
 
   const hasToken = () => accessToken.value !== '';
 
-  const setToken = (newAccessToken: string, newRefreshToken: string) => {
+  const setTokens = (newAccessToken = '', newRefreshToken = '') => {
     accessToken.value = newAccessToken;
     refreshToken.value = newRefreshToken;
   };
 
   return readonly({
-    accessToken: accessToken,
-    refreshToken: refreshToken,
+    accessToken,
+    refreshToken,
     hasToken,
-    setToken,
+    setTokens,
   });
 };
+export type AuthProps = ReturnType<typeof authProps>;
 
-export type useAuth = ReturnType<typeof useAuth>;
-export const AuthStateSymbol: InjectionKey<useAuth> = Symbol('AuthState');
-export const injectAuth = (): useAuth => {
+export const AuthStateSymbol: InjectionKey<AuthProps> = Symbol('AuthState');
+
+export const injectAuth = (): AuthProps => {
   const auth = inject(AuthStateSymbol);
   if (auth === undefined) {
     throw new Error('auth は provide されていません。');

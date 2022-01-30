@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import PKCE from 'js-pkce';
-import { injectAuth } from '../../store/useAuth';
+import { injectAuth } from '../../store/authContext';
 
 const auth = injectAuth();
 
