@@ -15,8 +15,8 @@ const { demoForm, demo, save, isLoading } = demoEditProps();
       <el-col>
         <el-form-item
           label="名称"
-          :rules="{ required: true, message: '必須項目です' }"
           prop="name"
+          :rules="{ required: true, message: '必須項目です' }"
         >
           <el-input v-model="demo.name" />
         </el-form-item>
