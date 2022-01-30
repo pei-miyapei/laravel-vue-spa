@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import { useDemoEdit } from '../../../feature/demos/demo/useDemoEdit';
+import { demoEditProps } from '../../../feature/demos/demo/demoEditProps';
 
-const { demo, isLoading, save, ruleFormRef } = useDemoEdit();
+const { demoForm, demo, save, isLoading } = demoEditProps();
 </script>
 
 <template>
   <el-form
+    ref="demoForm"
     :model="demo"
     label-width="100px"
     v-loading="isLoading"
-    ref="ruleFormRef"
   >
     <el-row>
       <el-col>

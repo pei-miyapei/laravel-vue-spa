@@ -3,13 +3,13 @@ import { onBeforeMount, reactive, ref } from 'vue';
 import { injectAuth } from '../../../store/authContext';
 import { Demo } from './demo';
 import { DemoRepository } from './demoRepository';
-import { useLoading } from './useLoading';
+import { loadingProps } from './loadingProps';
 
-export const useDemoEdit = () => {
-  const demoRepository = new DemoRepository(injectAuth());
+export const demoEditProps = () => {
+  const demoForm = ref<InstanceType<typeof ElForm>>();
   const demo = reactive(new Demo());
-  const { isLoading, loading } = useLoading();
-  const ruleFormRef = ref<InstanceType<typeof ElForm>>();
+  const demoRepository = new DemoRepository(injectAuth());
+  const { isLoading, loading } = loadingProps();
 
   // load
   onBeforeMount(async () => {
@@ -20,7 +20,7 @@ export const useDemoEdit = () => {
   });
 
   const save = async () => {
-    ruleFormRef.value?.validate((valid) => {
+    demoForm.value?.validate((valid) => {
       if (!valid) return;
       loading(async () => {
         const response = await demoRepository.upsert(demo);
@@ -30,5 +30,5 @@ export const useDemoEdit = () => {
     });
   };
 
-  return { demo, isLoading, save, ruleFormRef };
+  return { demoForm, demo, isLoading, save };
 };

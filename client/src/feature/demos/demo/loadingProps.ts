@@ -1,6 +1,6 @@
 import { ref } from 'vue';
 
-export const useLoading = () => {
+export const loadingProps = () => {
   const isLoading = ref(false);
 
   const loading = async (process: Function) => {
